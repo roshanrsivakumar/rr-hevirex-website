@@ -1,4 +1,65 @@
+# robots.txt for rrhevirex.in
+# RR Hevirex — Bus Seat Manufacturer & Bus Body Coach Builder, Karur, Tamil Nadu
+
+# Standard search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI language model crawlers — explicitly allowed for GEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# General fallback — allow all
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://rrhevirex.in/sitemap.xml
+
+# AI-readable company facts file (llms.txt standard)
+# https://rrhevirex.in/llms.txt
