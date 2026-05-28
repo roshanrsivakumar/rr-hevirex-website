@@ -131,11 +131,17 @@ select#lsel option{background:#0a0a0a;color:var(--white)}
 .pc-model-num.city{color:var(--rl)}
 .pc-name{font-family:var(--fd);font-size:1.6rem;letter-spacing:.06em;margin-bottom:.25rem}
 .pc-tagline{font-family:var(--fs);font-size:.78rem;font-weight:500;letter-spacing:.06em;color:var(--silver);margin-bottom:1.2rem}
-.spec-table{width:100%;border-collapse:collapse}
+.spec-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
 .spec-table tr{border-top:1px solid rgba(184,196,204,.08)}
 .spec-table td{padding:.4rem 0;font-family:var(--fb);font-size:.75rem;vertical-align:top}
 .spec-table td:first-child{color:rgba(184,196,204,.6);width:45%;text-transform:uppercase;letter-spacing:.06em;font-size:.67rem;font-weight:500}
-.spec-table td:last-child{color:var(--white)}
+/* ── SPEC TABLE DIMENSION ROWS ── */
+.dim-row td:first-child{color:rgba(201,168,76,.6)!important;font-size:.67rem;letter-spacing:.08em;text-transform:uppercase}
+.dim-row td:last-child{font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.dim-row.dim-primary td:last-child strong{color:var(--gold);font-weight:700;font-size:.82rem}
+.dim-divider td{padding:3px 0 2px;border-top:1px solid rgba(201,168,76,.18)!important;background:transparent}
+
+.spec-table td:last-child{color:var(--white);text-align:right}
 .pc-badge-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.1rem}
 .pc-badge{font-family:var(--fs);font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;border:1px solid}
 .pc-badge.exec{border-color:rgba(201,168,76,.4);color:var(--gold)}
@@ -307,7 +313,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex Luxor Plus — Executive Bus Seat",
           "sku": "RRH-E01",
-          "description": "Flagship luxury bus seat with premium leatherette upholstery, multi-stage recline mechanism and high-density PUF foam. Model RRH-E01 by RR Hevirex seat manufacturers, Karur Tamil Nadu.",
+          "description": "Flagship luxury bus seat with premium leatherette upholstery, multi-stage recline mechanism and high-density PUF foam. Model RRH-E01 by RR Hevirex seat manufacturers, Karur Tamil Nadu. Dimensions: 44-inch total width (22 inches per seat), 44-inch total height, 28-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/1.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -321,7 +327,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex Executive Pro — Business Class Bus Seat",
           "sku": "RRH-E02",
-          "description": "Business class luxury bus seat with ergonomic backrest, smooth mechanical recline and armrest. Model RRH-E02 by RR Hevirex seat manufacturers, Karur Tamil Nadu.",
+          "description": "Business class luxury bus seat with ergonomic backrest, smooth mechanical recline and armrest. Model RRH-E02 by RR Hevirex seat manufacturers, Karur Tamil Nadu. Dimensions: 44-inch total width (22 inches per seat), 44-inch total height, 28-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/2.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -335,7 +341,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex Royal Deluxe — Semi-Sleeper Bus Seat",
           "sku": "RRH-E03",
-          "description": "Premium luxury semi-sleeper bus seat for long-haul interstate coaches, high-density PUF foam with full recline. Model RRH-E03 by RR Hevirex, best seat manufacturer in Karur.",
+          "description": "Premium luxury semi-sleeper bus seat for long-haul interstate coaches, high-density PUF foam with full recline. Model RRH-E03 by RR Hevirex, best seat manufacturer in Karur. Dimensions: 40-inch total width (20 inches per seat), 44-inch total height, 28-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/3.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -349,7 +355,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex Comforto — Fleet Bus Seat",
           "sku": "RRH-F04",
-          "description": "Durable high-density PUF fleet bus seat for state and private bus operators, robust steel frame. Model RRH-F04 by RR Hevirex seat manufacturers, Karur Tamil Nadu.",
+          "description": "Durable high-density PUF fleet bus seat for state and private bus operators, robust steel frame. Model RRH-F04 by RR Hevirex seat manufacturers, Karur Tamil Nadu. Dimensions: 40-inch total width (20 inches per seat), 44-inch total height, 28-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/4.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -363,7 +369,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex Travelite — Lightweight Fleet Bus Seat",
           "sku": "RRH-F05",
-          "description": "Lightweight ergonomic fleet bus seat for intercity and express bus routes, foam cushion with fabric trim. Model RRH-F05 by RR Hevirex, seat manufacturer in Tamil Nadu.",
+          "description": "Lightweight ergonomic fleet bus seat for intercity and express bus routes, foam cushion with fabric trim. Model RRH-F05 by RR Hevirex, seat manufacturer in Tamil Nadu. Dimensions: 34.5-inch total width (17.25 inches per seat), 44-inch total height, 28-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/5.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -377,7 +383,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex Voyager Lite — Economy Fleet Bus Seat",
           "sku": "RRH-F06",
-          "description": "Economy fleet bus seat with high-tensile steel frame and foam cushion for Pan-India transit fleets. Model RRH-F06 by RR Hevirex, karur seat manufacturers.",
+          "description": "Economy fleet bus seat with high-tensile steel frame and foam cushion for Pan-India transit fleets. Model RRH-F06 by RR Hevirex, karur seat manufacturers. Dimensions: 34.5-inch total width (17.25 inches per seat), 44-inch total height, 28-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/6.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -391,7 +397,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex City Link — Urban Commuter Bus Seat",
           "sku": "RRH-C07",
-          "description": "High-density urban commuter bus seat for city transport fleets, maximum passenger capacity design. Model RRH-C07 by RR Hevirex seat manufacturers, Karur.",
+          "description": "High-density urban commuter bus seat for city transport fleets, maximum passenger capacity design. Model RRH-C07 by RR Hevirex seat manufacturers, Karur. Dimensions: 32-inch total width (16 inches per seat), 44-inch total height, 32-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/7.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -405,7 +411,7 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           "@type": "Product",
           "name": "RR Hevirex Speedstar — Rapid Transit City Bus Seat",
           "sku": "RRH-C08",
-          "description": "Compact rapid-transit city bus seat, high-density seating for urban bus networks, space-optimised design. Model RRH-C08 by RR Hevirex, best seat manufacturer Tamil Nadu.",
+          "description": "Compact rapid-transit city bus seat, high-density seating for urban bus networks, space-optimised design. Model RRH-C08 by RR Hevirex, best seat manufacturer Tamil Nadu. Dimensions: 32-inch total width (16 inches per seat), 44-inch total height, 32-inch backrest height, 18-inch seat depth, 4-inch cushion thickness.",
           "image": "https://rrhevirex.in/product%20type/8.png",
           "brand": {"@type":"Brand","name":"RR Hevirex"},
           "manufacturer": {"@id":"https://rrhevirex.in/#organization"},
@@ -587,6 +593,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">Luxor Plus</h2>
           <p class="pc-tagline" data-i18n="luxor_tag">Flagship executive seating for luxury interstate coaches.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>44"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>22"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>28"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td data-i18n="luxor_foam">High-Density PUF 45D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_tubular">Tubular steel, reinforced</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="luxor_recline">3-stage mechanical</td></tr>
@@ -609,6 +622,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">Executive Pro</h2>
           <p class="pc-tagline" data-i18n="expro_tag">Business-class performance at scalable fleet pricing.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>44"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>22"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>28"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td data-i18n="expro_foam">High-Density PUF 40D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_tubular">Tubular steel, reinforced</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="expro_recline">2-stage mechanical</td></tr>
@@ -630,6 +650,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">Royal Deluxe</h2>
           <p class="pc-tagline" data-i18n="royal_tag">Premium upholstery, panoramic ergonomics, OEM ready.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>40"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>20"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>28"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td data-i18n="royal_foam">High-Density PUF 38D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_tubular">Tubular steel, reinforced</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="royal_recline">2-stage mechanical</td></tr>
@@ -664,6 +691,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">Comforto</h2>
           <p class="pc-tagline" data-i18n="comf_tag">Standard comfort, maximum fleet reliability.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>40"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>20"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>28"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td>PUF 35D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_tubular_std">Tubular steel, standard</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="comf_recline">Push-back</td></tr>
@@ -685,6 +719,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">Travelite</h2>
           <p class="pc-tagline" data-i18n="trav_tag">Lightweight profile, ergonomic support, fleet-optimised.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>34.5"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>17.25"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>28"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td>PUF 32D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_tubular_lw">Tubular steel, lightweight</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="trav_recline">Push-back</td></tr>
@@ -706,6 +747,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">Voyager Lite</h2>
           <p class="pc-tagline" data-i18n="voy_tag">Economy-grade durability, no compromise on safety.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>34.5"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>17.25"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>28"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td>PUF 30D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_tubular_std">Tubular steel, standard</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="voy_recline">Non-reclining</td></tr>
@@ -740,6 +788,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">City Link</h2>
           <p class="pc-tagline" data-i18n="citl_tag">High-density seating for urban fleet operations.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>32"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>16"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>32"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td>PUF 35D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_heavy">Heavy-gauge tubular steel</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="citl_recline">Fixed (non-reclining)</td></tr>
@@ -760,6 +815,13 @@ html[lang="ta"] .mat-label,html[lang="ml"] .mat-label,html[lang="kn"] .mat-label
           <h2 class="pc-name">Speedstar</h2>
           <p class="pc-tagline" data-i18n="spd_tag">Maximum-capacity rapid transit seating, vandal-resistant.</p>
           <table class="spec-table">
+            <tr class="dim-row dim-primary"><td data-i18n="spec_total_width">Total Width</td><td><strong>32"</strong></td></tr>
+            <tr class="dim-row dim-primary"><td data-i18n="spec_seat_w">Seat Width (Each)</td><td><strong>16"</strong></td></tr>
+            <tr class="dim-row"><td data-i18n="spec_total_h">Total Height</td><td>44"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_back_h">Backrest Height</td><td>32"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_depth">Seat Depth</td><td>18"</td></tr>
+            <tr class="dim-row"><td data-i18n="spec_cushion">Cushion Thickness</td><td>4"</td></tr>
+            <tr class="dim-divider"><td colspan="2"></td></tr>
             <tr><td data-i18n="spec_foam">Foam Density</td><td>PUF 32D</td></tr>
             <tr><td data-i18n="spec_frame">Frame</td><td data-i18n="spec_heavy">Heavy-gauge tubular steel</td></tr>
             <tr><td data-i18n="spec_recline">Recline</td><td data-i18n="spd_recline">Fixed (non-reclining)</td></tr>
@@ -876,7 +938,7 @@ const T={
     voy_tag:'Budget-friendly and strong. Safe and durable.',voy_recline:'No recline',voy_head:'Fixed headrest',voy_arm:'Fixed armrest',voy_extra:'UV-resistant fabric, very durable',
     citl_tag:'Space-saving seat for city bus routes.',citl_recline:'No recline',citl_config:'High-density city layout',citl_extra:'Easy to clean, grab rail ready',
     spd_tag:'More seats per bus. Built tough for daily wear.',spd_recline:'No recline',spd_config:'Maximum capacity layout',spd_extra:'Vandal-resistant, UV-stable',
-    spec_foam:'Foam',spec_frame:'Frame',spec_recline:'Recline',spec_head:'Headrest',spec_arm:'Armrest',spec_extra:'Extras',spec_config:'Layout',
+    spec_total_width:'Total Width',spec_seat_w:'Seat Width (Each)',spec_total_h:'Total Height',spec_back_h:'Backrest Height',spec_depth:'Seat Depth',spec_cushion:'Cushion Thickness',spec_foam:'Foam',spec_frame:'Frame',spec_recline:'Recline',spec_head:'Headrest',spec_arm:'Armrest',spec_extra:'Extras',spec_config:'Layout',
     spec_tubular:'Steel tube, reinforced',spec_tubular_std:'Steel tube, standard',spec_tubular_lw:'Steel tube, lightweight',spec_heavy:'Heavy-duty steel tube',
     badge_lux:'Luxury',badge_interstate:'Interstate',badge_flagship:'Top Model',badge_business:'Business Class',badge_deluxe:'Deluxe',badge_fleet:'Fleet Grade',badge_longhaul:'Long-Haul',badge_lite:'Lightweight',badge_economy:'Economy',badge_durable:'High Durability',badge_urban:'City Bus',badge_highdens:'High Density',badge_rapid:'Fast Transit',badge_maxcap:'Max Capacity',
     studio_desc:'All seat covers are made in our own factory. Choose from standard colours, or tell us what you need — we can match any colour, add your logo, or make a custom pattern. All fabrics are tested and certified.',
@@ -899,7 +961,7 @@ const T={
     voy_tag:'பொருளாதார தர நீடித்த தன்மை.',voy_recline:'சாயாது',voy_head:'நிலையானது',voy_arm:'நிலையானது',voy_extra:'UV எதிர்ப்பு துணி',
     citl_tag:'நகர கூட்ட செயல்பாட்டுக்கான அதிக அடர்த்தி இருக்கை.',citl_recline:'நிலையானது',citl_config:'அதிக அடர்த்தி நகர வடிவமைப்பு',citl_extra:'சுலபமாக சுத்தம் செய்யும் துணி',
     spd_tag:'அதிகபட்ச திறன் விரைவு போக்குவரத்து இருக்கை.',spd_recline:'நிலையானது',spd_config:'அதிகபட்ச திறன் வடிவமைப்பு',spd_extra:'சேதம் தாங்கும் தன்மை',
-    spec_foam:'அதிக அடர்த்தி கொண்ட PUF',spec_frame:'சட்டம்',spec_recline:'சாய்வு',spec_head:'தலைக்கவசம்',spec_arm:'கை தண்டு',spec_extra:'கூடுதல்',spec_config:'அமைப்பு',
+    spec_total_width:'மொத்த அகலம்',spec_seat_w:'இருக்கை அகலம் (ஒவ்வொன்றும்)',spec_total_h:'மொத்த உயரம்',spec_back_h:'முதுகு சாய்வு உயரம்',spec_depth:'இருக்கை ஆழம்',spec_cushion:'குஷன் தடிமன்',spec_foam:'அதிக அடர்த்தி கொண்ட PUF',spec_frame:'சட்டம்',spec_recline:'சாய்வு',spec_head:'தலைக்கவசம்',spec_arm:'கை தண்டு',spec_extra:'கூடுதல்',spec_config:'அமைப்பு',
     spec_tubular:'குழாய் வடிவ எஃகு சட்டங்கள்',spec_tubular_std:'குழாய் வடிவ எஃகு',spec_tubular_lw:'இலகு குழாய் வடிவ எஃகு',spec_heavy:'கனமான குழாய் வடிவ எஃகு',
     badge_lux:'சொகுசு OEM',badge_interstate:'மாநிலாந்தர',badge_flagship:'முன்னோடி',badge_business:'வணிக வகுப்பு',badge_deluxe:'டீலக்ஸ்',badge_fleet:'கூட்ட தரம்',badge_longhaul:'நீண்ட தூரம்',badge_lite:'இலகு எடை',badge_economy:'பொருளாதார கூட்டம்',badge_durable:'அதிக நீடித்த தன்மை',badge_urban:'நகர போக்குவரத்து',badge_highdens:'அதிக அடர்த்தி',badge_rapid:'விரைவு போக்குவரத்து',badge_maxcap:'அதிகபட்ச திறன்',
     studio_desc:'ஒவ்வொரு உறையும் ஆபரேட்டர் விவரக்குறிப்பிற்கு ஏற்றவாறு தயாரிக்கப்படுகிறது. UV நிலைப்படுத்தப்பட்ட, தீ தடுப்பு சான்றிதழ் பெற்ற திசு.',
@@ -922,7 +984,7 @@ const T={
     voy_tag:'ഇക്കോണമി ഡ്യൂറബിലിറ്റി.',voy_recline:'നോൺ-റിക്ലൈൻ',voy_head:'ഫിക്സഡ്',voy_arm:'ഫിക്സഡ്',voy_extra:'UV-പ്രതിരോധം',
     citl_tag:'ഉയർന്ന സാന്ദ്രത നഗര ഓപ്പറേഷൻ.',citl_recline:'ഫിക്സഡ്',citl_config:'ഹൈ-ഡെൻ ലേഔട്ട്',citl_extra:'ഈസി-ക്ലീൻ',
     spd_tag:'മാക്സ് കപ്പ. റാപ്പിഡ് ട്രാൻസിറ്റ്.',spd_recline:'ഫിക്സഡ്',spd_config:'മാക്സ് ലേഔട്ട്',spd_extra:'വാൻഡൽ-റെസിസ്',
-    spec_foam:'ഉയർന്ന സാന്ദ്രതയുള്ള PUF',spec_frame:'ഫ്രെയിം',spec_recline:'റിക്ലൈൻ',spec_head:'ഹെഡ്‌റെ.',spec_arm:'ആർംറെ.',spec_extra:'എക്സ്ട്രാ',spec_config:'കോൺഫിഗ്',
+    spec_total_width:'മൊത്തം വീതി',spec_seat_w:'സീറ്റ് വീതി (ഓരോന്നും)',spec_total_h:'മൊത്തം ഉയരം',spec_back_h:'ബാക്ക്‌റെസ്റ്റ് ഉയരം',spec_depth:'സീറ്റ് ആഴം',spec_cushion:'കുഷൻ കനം',spec_foam:'ഉയർന്ന സാന്ദ്രതയുള്ള PUF',spec_frame:'ഫ്രെയിം',spec_recline:'റിക്ലൈൻ',spec_head:'ഹെഡ്‌റെ.',spec_arm:'ആർംറെ.',spec_extra:'എക്സ്ട്രാ',spec_config:'കോൺഫിഗ്',
     spec_tubular:'ട്യൂബുലാർ സ്റ്റീൽ ഫ്രെയിമുകൾ',spec_tubular_std:'ട്യൂബുലാർ സ്റ്റീൽ',spec_tubular_lw:'ലൈറ്റ് ടുബുലർ',spec_heavy:'ഹെവി-ഗേജ് ട്യൂബുലാർ',
     badge_lux:'ലക്ഷ്വറി OEM',badge_interstate:'ഇൻറർസ്റ്റേറ്റ്',badge_flagship:'ഫ്ലാഗ്ഷിപ്',badge_business:'ബിസ. ക്ലാസ്',badge_deluxe:'ഡീലക്സ്',badge_fleet:'ഫ്ലീറ്റ്',badge_longhaul:'ലോംഗ്-ഹോൾ',badge_lite:'ലൈറ്റ്',badge_economy:'ഇക്കോണ.',badge_durable:'ഡ്യൂറ.',badge_urban:'അർബൻ',badge_highdens:'ഹൈ ഡെൻ',badge_rapid:'റാപ്പിഡ്',badge_maxcap:'മാക്സ്',
     studio_desc:'ഓരോ കവറും ഓപ്പറേറ്ററുടെ സ്പെസിഫിക്കേഷൻ പ്രകാരം ഉണ്ടാക്കുന്നു. UV-സ്ഥിരത, ഫ്ലേം-റിറ്റാർഡന്റ്.',
@@ -945,7 +1007,7 @@ const T={
     voy_tag:'ಆರ್ಥಿಕ ದರ ಬಾಳಿಕೆ.',voy_recline:'ಮೇಲೆ ಬರುವುದಿಲ್ಲ',voy_head:'ಸ್ಥಿರ',voy_arm:'ಸ್ಥಿರ',voy_extra:'UV-ನಿರೋಧಕ',
     citl_tag:'ಉಚ್ಚ ಸಾಂದ್ರತೆ ನಗರ ಫ್ಲೀಟ್.',citl_recline:'ಸ್ಥಿರ',citl_config:'ಉಚ್ಚ ಸಾಂದ್ರತೆ ವಿನ್ಯಾಸ',citl_extra:'ಸ್ವಚ್ಛ ಬಟ್ಟೆ',
     spd_tag:'ಗರಿಷ್ಠ ಸಾಮರ್ಥ್ಯ ರ್ಯಾಪಿಡ್.',spd_recline:'ಸ್ಥಿರ',spd_config:'ಗರಿಷ್ಠ ವಿನ್ಯಾಸ',spd_extra:'ವಂಡಲ್-ರೆಸಿಸ್.',
-    spec_foam:'ಹೆಚ್ಚಿನ ಸಾಂದ್ರತೆಯ PUF',spec_frame:'ಫ್ರೇಮ್',spec_recline:'ರಿಕ್ಲೈನ್',spec_head:'ಹೆಡ್‌ರೆ.',spec_arm:'ಆರ್ಮ್‌ರೆ.',spec_extra:'ಹೆಚ್ಚುವರಿ',spec_config:'ಕಾನ್ಫಿಗ್.',
+    spec_total_width:'ಒಟ್ಟು ಅಗಲ',spec_seat_w:'ಸೀಟ್ ಅಗಲ (ಪ್ರತಿ)',spec_total_h:'ಒಟ್ಟು ಎತ್ತರ',spec_back_h:'ಬ್ಯಾಕ್‌ರೆಸ್ಟ್ ಎತ್ತರ',spec_depth:'ಸೀಟ್ ಆಳ',spec_cushion:'ಕುಶನ್ ದಪ್ಪ',spec_foam:'ಹೆಚ್ಚಿನ ಸಾಂದ್ರತೆಯ PUF',spec_frame:'ಫ್ರೇಮ್',spec_recline:'ರಿಕ್ಲೈನ್',spec_head:'ಹೆಡ್‌ರೆ.',spec_arm:'ಆರ್ಮ್‌ರೆ.',spec_extra:'ಹೆಚ್ಚುವರಿ',spec_config:'ಕಾನ್ಫಿಗ್.',
     spec_tubular:'ಕೊಳವೆಯಾಕಾರದ ಸ್ಟೀಲ್ ಫ್ರೇಮ್‌ಗಳು',spec_tubular_std:'ಕೊಳವೆ ಸ್ಟೀಲ್',spec_tubular_lw:'ಲಘು ಕೊಳವೆ',spec_heavy:'ಭಾರ ಕೊಳವೆ ಸ್ಟೀಲ್',
     badge_lux:'ಲಕ್ಸರಿ OEM',badge_interstate:'ಅಂತರರಾಜ್ಯ',badge_flagship:'ಫ್ಲ್ಯಾಗ್‌ಶಿಪ್',badge_business:'ಬಿಸಿನೆಸ್',badge_deluxe:'ಡೀಲಕ್ಸ್',badge_fleet:'ಫ್ಲೀಟ್',badge_longhaul:'ದೀರ್ಘ',badge_lite:'ಲಘು',badge_economy:'ಆರ್ಥಿಕ',badge_durable:'ಬಾಳಿಕೆ',badge_urban:'ನಗರ',badge_highdens:'ಉಚ್ಚ ಸಾಂದ್ರ.',badge_rapid:'ವೇಗ',badge_maxcap:'ಗರಿಷ್ಠ',
     studio_desc:'ಪ್ರತಿ ಕವರ್ ಆಪರೇಟರ್ ವಿಶೇಷತೆಗೆ ತಯಾರಿಸಲಾಗಿದೆ.',
@@ -968,7 +1030,7 @@ const T={
     voy_tag:'इकोनॉमी स्थायित्व।',voy_recline:'नॉन-रिक्लाइन',voy_head:'स्थिर',voy_arm:'स्थिर',voy_extra:'UV-प्रतिरोधी',
     citl_tag:'उच्च घनत्व नगरीय फ्लीट।',citl_recline:'स्थिर',citl_config:'उच्च-घनत्व लेआउट',citl_extra:'आसान सफाई',
     spd_tag:'अधिकतम क्षमता रैपिड ट्रांजिट।',spd_recline:'स्थिर',spd_config:'अधिकतम लेआउट',spd_extra:'वैंडल-प्रतिरोधी',
-    spec_foam:'उच्च घनत्व वाला PUF',spec_frame:'फ्रेम',spec_recline:'रिक्लाइन',spec_head:'हेडरेस्ट',spec_arm:'आर्मरेस्ट',spec_extra:'अतिरिक्त',spec_config:'कॉन्फिग.',
+    spec_total_width:'कुल चौड़ाई',spec_seat_w:'सीट चौड़ाई (प्रत्येक)',spec_total_h:'कुल ऊंचाई',spec_back_h:'पीठ समर्थन ऊंचाई',spec_depth:'सीट गहराई',spec_cushion:'कुशन मोटाई',spec_foam:'उच्च घनत्व वाला PUF',spec_frame:'फ्रेम',spec_recline:'रिक्लाइन',spec_head:'हेडरेस्ट',spec_arm:'आर्मरेस्ट',spec_extra:'अतिरिक्त',spec_config:'कॉन्फिग.',
     spec_tubular:'ट्यूबलर स्टील फ्रेम',spec_tubular_std:'ट्यूबलर स्टील',spec_tubular_lw:'हल्का ट्यूबलर',spec_heavy:'हेवी-गेज ट्यूबलर',
     badge_lux:'लक्जरी OEM',badge_interstate:'इंटरस्टेट',badge_flagship:'फ्लैगशिप',badge_business:'बिजनेस',badge_deluxe:'डीलक्स',badge_fleet:'फ्लीट',badge_longhaul:'लंबी दूरी',badge_lite:'हल्का',badge_economy:'इकोनॉमी',badge_durable:'टिकाऊ',badge_urban:'शहरी',badge_highdens:'उच्च घनत्व',badge_rapid:'रैपिड',badge_maxcap:'अधिकतम',
     studio_desc:'हर कवर ऑपरेटर विनिर्देश के अनुसार बनाया जाता है। UV-स्थिर, अग्नि-मंदक।',
